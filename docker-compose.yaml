@@ -16,7 +16,7 @@
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-version: "3.8"
+version: "3.3"
 
 services:
   zomboid-dedicated-server:
@@ -27,24 +27,24 @@ services:
     container_name: zomboid-dedicated-server
     restart: "no"
     environment:
-      - "ADMIN_PASSWORD=changeme"
-      - "ADMIN_USERNAME=superuser"
+      - "ADMIN_PASSWORD=admin"
+      - "ADMIN_USERNAME=admin"
       - "AUTOSAVE_INTERVAL=15"
       - "BIND_IP=0.0.0.0"
       - "DEFAULT_PORT=16261"
       - "GAME_VERSION=public"
       - "GC_CONFIG=ZGC"
-      - "MAP_NAMES=Muldraugh, KY"
-      - "MAX_PLAYERS=16"
+      - "MAP_NAMES=Over the River - Secondary Route;Bedford road;Refordville;Trelai_4x4;Trelai_spawns;Fort Rock Ridge;Grapeseed;WestPointExpansionFix;SLEOSpawn;RavenCreek;SMUISpawn;OverlookHotel;Eerie Country;Eerie B;Eerie C;Eerie A;Eerie D;Muldraugh Military Base;Blackwood;Chestown;west_point_expansion;BedfordFalls;North;South;West;Chinatown_EX;Riverside Fire Department;Pitstop;Pitstop;FortRedstone;vehicle_interior;AZSpawn;AZSpawn;li_township;Rosewood Military Hospital;Chinatown;NewEkron;Otr;pz_rosewoodexp_map;Glenport_map;Rebuild_map;FortRedstone_map;FezNature_map;Fort Knox, KY by Woldren_map;Eerie Country_map;cherbourg_map;Fort Knox linked to Eerie Country_map;Brandenburg by Woldren_map;landsole_map;west_point_expansion_map;From Bedford Falls to Fort Knox_map;InGameMaps_Main;SemaNewCity_map;Silverton_map;Rosebery_map;NewDenver_map;Fort Benning;Louisville, KY;Muldraugh, KY"
+      - "MAX_PLAYERS=8"
       - "MAX_RAM=4096m"
-      - "MOD_NAMES="
-      - "MOD_WORKSHOP_IDS="
+      - "MOD_NAMES=vino125;benze;benz;74amgeneralM151A2;80kz1000;82jeepJ10;82oshkoshM911;83amgeneralM923;84merc;85merc;86fordE150;86oshkoshP19A;87cruiser;88chevyS10;89fordBronco;89def110;89def90;90niva;CytU1550L;91range;92amgeneralM998Reskin;92amgeneralM998UN;92amgeneralM998TheDivision;CytMCF1;97bushmaster;UBPropFix;50%metalweight;ReducedWoodWeight2x41;P4AddictedToWeight;blkt_invtrack;Arsenal(26)GunFighter;AuthenticZBackpacks+;amclub;autotsartrailers;ATA_Bus;ATA_VanDeRumba;ATA_Mustang;ATA_Dadge;ATA_Jeep;ATA_Luton;ATA_Petyarbuilt;AzasPlayableGuitar;BedfordFalls;BetterSortCC;TowingCar;bcUtils;BBVehicles;Blackwood;ATA_Samara;BB_Utils;Brita_K153;Brita;BCGRareWeapons;BCGTools;pz-bzoukhotbar;CanteensAndBottles;Chestown;Chinatown expansion;Chinatown;BB_CommonSense;filisbustertrucksliveriesas24;CraftHelperContinued;cropsNeverRot;Diederiks Tile Palooza;Disassemble Container With Items;DylansTiles;EasyConfigChucked;EasySpareMagazineReload;PZMKTP_Brita;TMC_Trolley;Zombie Fix;YouDriveISleep;WPEFIX;WestPointExpansion;TheStar;rSemiTruck;VitaminHolic;Visible Generators and Corpses;VehicleRecyclingPatch;VehicleRecycling;VanillaFoodExtension;EerieCountry;NewEkron;eris_food_expiry;eris_nightvision_goggles;EveryKatanaXSheaths;EN_Flags;EN_Newburbs;FantaStreetTiles_01;FRUsedCars;FH;Fort Benning;FORTREDSTONE;Fort Rock Ridge;fuelsideindicator;FuelAPI;Grapeseed;GunSuicide;TwoWeaponsOnBack;tsarslib;TryhonestyTiles;TMC_TrueActions;TrueActionsPatch4173;tkTiles_01;TheyKnew;TKS;SwapIt;survivingthroughseasons;SpnHair;snowiswater ;SmokingSoundsOverhaul;SlowConsumption;SleepWithFriends;ShowSkillUpName;PwSleepingbags;SLEO;SMUI;sapphcooking;RV_Interior_MP;RotatorsLib;RMH;pz_rosewoodexp_map;BedfordRoad;Riverside Fire Department;SlingMod;RepairAnyClothes;RenameContainers;Refordville;ReLght;Reduce Action Time;ReadFasterWhenSitting;RavenCreek;BLTRandomZombies;OHKKK111;GunFighter_Radial_Menu;HTowTruck;P4HasBeenRead;GlassHats;NoLighterNeeded;InGameMaps;ItemTweakerAPI;katanasandmachetesonbackorbelt;lakeivytownship;LegendCraftMW;Louisville;Max;MazdaMiatafhq;melos_tiles_for_miles_pack;GWagen;MiniHealthPanel;ModManager;ModManagerServer;modoptions;Font_Arioch;MoreBuilds;MoreMaps;muldraughmilitarybase;Pitstop;PertsPartyTiles;OverlookHotel;OtrSR;Otr;OujinjinTiles;nattachments;NightVisionChucked;Andongmamanfaisane;RainWash;UltimateXPTweaker;95959595959595;AutoMechanics;XnerTree;MCM;FactionMap;REORDER_CONTAINERS;Trelai_4x4_Steam;칸보이드 칼집 호환패치;ReduceLagofCraftingMenu"
+      - "MOD_WORKSHOP_IDS=2878374713;2517372810;2513816679;2785549133;2818847163;2886832257;2618213077;2811383142;2805630347;2469388752;2870394916;2566953935;2489148104;2886832936;2886833398;2441990998;2443275640;2422681177;2843855721;2409333430;2642541073;2834460958;2853146218;2897390033;2883755057;2829657632;2377867605;2604943386;2809595776;2297098490;2335368829;2778576730;2282429356;2592358528;2811232708;2681635926;2743496289;2636100523;2792425535;2782258356;2731005255;522891356;2313387159;2241990680;503640135;2829166253;2536865912;2850439818;2850135071;2794684100;2460154811;2200148440;2432621382;2423906082;2434425002;2863949128;2840889213;2895386882;2730975264;2875848298;2873948227;2787291513;2728416041;2337452747;2835852387;2599752664;2529746725;2590662055;2759024505;2478768005;2896255721;2830570280;2805994608;2195155059;2619072426;2759339330;2438966986;2809719515;2833065348;2289429759;2454453639;1254546530;2712480036;1651019937;1793461606;2865715979;2784607980;2774834715;2554699200;1510950729;2447729538;2693585128;1516836158;2806456685;2616986064;2688538916;2463499011;2402057349;2790894055;2392709985;2844685624;2487022075;2849866277;2384329562;2725378876;2839025395;2366717227;2753086629;2463184726;2704811006;2857762294;2864231031;2686624983;2312553261;2714848168;2616752828;2530389024;2832136889;2822286426;2732594572;2847283719;2718350686;2735894249;2799120190;2644986930;2142622992;2880687295;2726058465;2780594299;2877532503;1938484133;2196102849;2818577583;2111645536;2884558190;2292487242;2544353492;2423266708;2714198296;2756689895;566115016;2016648690;2252982049;2814896298;2680926895;2492565135;2749103052;2879745353;2791949767;2866258937;2694448564;2725216703;2169435993;2485028088;515555911;2729427093;2706673644;2597946327;2837923608;2881386527;2603239477;926737806;2844829195;2754567348;2842179206;1961346558;2657661246;2827283808;2901643777;2588598892;2542052721;2762018937;2877685881;2901962885;2800337234;2901833848;2611723883"
       - "PAUSE_ON_EMPTY=true"
       - "PUBLIC_SERVER=true"
-      - "RCON_PASSWORD=changeme_rcon"
+      - "RCON_PASSWORD=admin"
       - "RCON_PORT=27015"
-      - "SERVER_NAME=ZomboidServer"
-      - "SERVER_PASSWORD="
+      - "SERVER_NAME=admin"
+      - "SERVER_PASSWORD=admin"
       - "STEAM_VAC=true"
       - "UDP_PORT=16262"
       - "USE_STEAM=true"
